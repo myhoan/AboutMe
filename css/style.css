@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
+/* all page */
 *{
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -11,4 +12,33 @@
     border: none;
     text-transform: capitalize;
     transition: all .2s linear;
+}
+
+/* var color */
+:root {
+    --yellow: #DAA520;
+}
+
+/* background color of page */
+*::selection {
+    background: var(--yellow);
+    color: #333;
+}
+
+/* font size of word */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #222;
+}
+
+html::-webkit-slider-thumb {
+    background: var(--yellow);
 }
