@@ -46,6 +46,7 @@ html::-webkit-scrollbar-thumb {
 body {
     background: #111;
     overflow-x: hidden;
+    padding-left: 35rem;
 }
 
  /* Header css  */
@@ -104,4 +105,110 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     background: var(--green);
+}
+
+/* media js */
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+@media  (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+    }
+}
+
+@media  (max-width: 991px){
+    header {
+        left: -120%;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header.toggle {
+        left: 0%;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
+@media  (max-width: 769px){
+    html {
+        font-size: 50%;
+    }
+}
+
+@media  (max-width: 400px){
+    header {
+        width: 100vw;
+    }
+}
+
+/* Home css */
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: var(--green);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;  
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--green);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
 }
