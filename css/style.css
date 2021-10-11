@@ -107,6 +107,151 @@ header .navbar ul li a:hover {
     background: var(--green);
 }
 
+
+/* Home css */
+section {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn {
+    padding: 0.7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    background: var(--green);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+
+.home h3 {
+    font-size: 2.5rem;
+    color: #fff;  
+}
+
+.home h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.home h1 span {
+    color: var(--green);
+}
+
+.home p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+/* About css */
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #fff4;
+    color: #fff;
+}
+
+.heading span {
+    color: var(--green);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;  
+}
+
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--green);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #eee;
+    padding: 0 0.5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--green);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Education css */
+
+.education .box-container {
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: 0.2rem solid #fff;
+    position: relative;
+}
+
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 5rem 2.5rem;
+}
+
 /* media js */
 #menu {
     position: fixed;
@@ -159,56 +304,12 @@ header .navbar ul li a:hover {
     header {
         width: 100vw;
     }
-}
 
-/* Home css */
-section {
-    min-height: 100vh;
-    padding: 1rem;
-}
+    .heading {
+        margin: 0 3rem;
+    }
 
-.btn {
-    padding: 0.7rem 3rem;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-}
-
-.btn i {
-    padding: 0 0.5rem;
-    font-size: 1.8rem;
-}
-
-.btn:hover {
-    background: var(--green);
-}
-
-.home {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    padding: 0 15rem;
-}
-
-.home h3 {
-    font-size: 2.5rem;
-    color: #fff;  
-}
-
-.home h1 {
-    font-size: 5rem;
-    color: #fff;
-}
-
-.home h1 span {
-    color: var(--green);
-}
-
-.home p {
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 0;
+    .about .row .counter .box {
+        width: 100%;
+    }
 }
